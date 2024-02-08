@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BuildDateTimeGenerator": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\Usages\\ConsoleApp\\ConsoleApp.csproj"
+    }
+  }
+}
