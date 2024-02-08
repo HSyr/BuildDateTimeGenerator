@@ -6,7 +6,7 @@
     <Version>1.0.0</Version>
     <Title>BuildDateTime Generator</Title>
     <Authors>Hynek Syrovátka</Authors>
-    <Description>ToDo A source code generator for creating a class with a build DateTime property.</Description>
+    <Description>C# source code generator for project build date and time</Description>
     <EnableNETAnalyzers>True</EnableNETAnalyzers>
     <RootNamespace>BuildDateTimeGenerator</RootNamespace>
     <LangVersion>latest</LangVersion>
