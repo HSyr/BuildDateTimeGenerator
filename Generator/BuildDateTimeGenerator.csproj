@@ -16,6 +16,12 @@
     <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
     <CompilerGeneratedFilesOutputPath>Generated</CompilerGeneratedFilesOutputPath>
     <Company>No Company</Company>
+    <PackageProjectUrl>https://github.com/HSyr/BuildDateTimeGenerator</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>PackageIcon.png</PackageIcon>
+    <PackageIconFullPath>$(MSBuildThisFileDirectory)PackageIcon.png</PackageIconFullPath>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/HSyr/BuildDateTimeGenerator</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="bin\**" />
@@ -26,6 +32,10 @@
   <ItemGroup>
     <!-- Place the generator in the analyzer directory of the NuGet package -->
     <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -40,6 +50,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="PackageIcon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
