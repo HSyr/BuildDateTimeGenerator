@@ -21,7 +21,10 @@
     <PackageIcon>PackageIcon.png</PackageIcon>
     <PackageIconFullPath>$(MSBuildThisFileDirectory)PackageIcon.png</PackageIconFullPath>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/HSyr/BuildDateTimeGenerator</RepositoryUrl>
+    <PackageTags>generator;source generator;csharp</PackageTags>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="bin\**" />
@@ -39,13 +42,9 @@
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <NoWarn />
-    <WarningLevel>9999</WarningLevel>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <NoWarn />
-    <WarningLevel>9999</WarningLevel>
   </PropertyGroup>
 
   <ItemGroup>
