@@ -1,6 +1,8 @@
 # BuildDateTime Generator
 This simple C# source code generator adds the `DateTimeOffset BuildDateTime { get; }` property to the compiled project. The property gets the [DateTimeOffset](https://learn.microsoft.com/cs-cz/dotnet/api/system.datetimeoffset) value which is set to the date and time the project was built. 
 
+[Download](https://www.nuget.org/packages/BuildDateTimeGenerator) the package.
+
 The way the property is accessible depends on the project:
 
 **1.** **`Main()` style entry point application**
