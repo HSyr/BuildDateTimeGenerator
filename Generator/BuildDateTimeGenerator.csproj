@@ -3,13 +3,13 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IncludeBuildOutput>false</IncludeBuildOutput>
-    <Version>1.0.1</Version>
+    <Version>2.0.0</Version>
     <Title>BuildDateTime Generator</Title>
     <Authors>Hynek Syrovátka</Authors>
     <Description>C# source code generator for project build date and time</Description>
     <EnableNETAnalyzers>True</EnableNETAnalyzers>
     <RootNamespace>BuildDateTimeGenerator</RootNamespace>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>preview</LangVersion>
     <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
     <IsPublishable>False</IsPublishable>
     <IsRoslynComponent>true</IsRoslynComponent>
@@ -25,6 +25,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/HSyr/BuildDateTimeGenerator</RepositoryUrl>
     <PackageTags>generator;source generator;csharp</PackageTags>
+    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="bin\**" />
@@ -48,7 +49,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.8.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.14.0" />
   </ItemGroup>
 
   <ItemGroup>
