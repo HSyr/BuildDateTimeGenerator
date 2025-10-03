@@ -61,6 +61,7 @@ namespace {rootNamespace}
                 location: null, // Get the location of the class name
                 messageArgs: null ); // Pass the class name to the message format
 
+          spc.ReportDiagnostic( diagnostic );
           return;
         }
       }
